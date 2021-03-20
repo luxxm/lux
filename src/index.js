@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Home from './website/Home/Home';
+import Topbar from './website/Topbar/Topbar';
+import About from './website/About/About';
+import Contact from './website/Contact/Contact';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <div id="main">
+    <Topbar />
+    <Home />
+    <About />
+    <Contact />
+  </div>,
   document.getElementById('root')
 );
 

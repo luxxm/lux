@@ -1,0 +1,117 @@
+@import '../../globals.css';
+
+#about {
+    top: 100vh;
+
+    width: 100vw;
+
+    background-color: var(--backgroundColor2);
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+#about p {
+    font-family: var(--genericFont);
+    font-size: 2.5vw;
+    font-weight: 100;
+
+    text-shadow: rgba(0, 0, 0, 0.25) .2vw .1vw .4vw;
+
+    width: 60%;
+}
+
+.title-smaller {
+    margin-top: 3vw;
+
+    font-size: 3vw;
+
+    word-spacing: 1vw;
+}
+
+#img-list {
+    background-color: var(--backgroundColor1);
+
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+
+    width: 60%;
+    height: 60vh;
+    
+    border-radius: .3vw;
+
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#img-list img {
+    width: 15%;
+
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+
+#proj-list {
+    margin-top: 2.5vw;
+
+    height: auto;
+
+    width: 70%;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+
+    margin-bottom: 4vw;
+}
+
+.proj-list-item {
+    height: 100%;
+    width: 33%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    cursor: pointer;
+
+    border-radius: .3vw;
+
+    transition: ease-in-out 200ms all;
+}
+
+.proj-list-item:hover {
+    background-color: var(--backgroundColor1);
+    color: black;
+}
+
+.proj-list-item img {
+    width: 70%;
+
+    padding: .8vw;
+}
+
+.proj-item-title-text {
+    margin: 0;
+    font-size: 2vw;
+
+    text-align: center;
+
+    margin: 1vw;
+
+    font-family: var(--genericFont);
+    font-weight: 100;
+
+    text-shadow: rgba(0, 0, 0, 0.25) .2vw .1vw .4vw;
+}

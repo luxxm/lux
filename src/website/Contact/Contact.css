@@ -1,0 +1,148 @@
+@import '../../globals.css';
+
+#contact {
+    width: 100vw;
+    height: 140vh;
+
+    background-color: var(--backgroundColor1);
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+#contact-form {
+    position: relative;
+
+    display: flex;
+
+    width: 60%;
+    height: 45%;
+
+    flex-wrap: wrap;
+
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 1.5vw;
+
+    color: rgb(80, 80, 80);
+}
+
+#contact-form-name {
+    all: unset;
+
+    width: 40%;
+    height: 15%;
+
+    background-color: #9A9EAB;
+
+    padding-left: 2%;
+
+    transition: ease-in-out 200ms all;
+}
+
+#contact-form-email {
+    all: unset;
+
+    width: 55%;
+    height: 15%;
+
+    margin-left: 1%;
+
+    background-color: #9A9EAB;
+
+    padding-left: 2%;
+}
+
+#contact-form-message {
+    all: unset;
+
+    height: 83%;
+    width: 100%;
+
+    margin-top: 1%;
+
+    background-color: #9A9EAB;
+
+    padding-left: 2%;
+    padding-right: 2%;
+
+    overflow-x: hidden;
+    word-wrap: break-word;
+
+    line-height: 150%;
+}
+
+#contact-form-button {
+    all: unset;
+
+    position: absolute;
+
+    width: 10%;
+    height: 10%;
+
+    border-left-style: solid;
+    border-top-style: solid;
+    border-left-width: .5vw;
+    border-top-width: .5vw;
+    border-color: var(--backgroundColor1);
+
+    right: 0;
+    bottom: 0;
+
+    text-align: center;
+
+    background-color: #9A9EAB;
+
+    transition: ease-in-out 200ms all;
+
+    cursor: pointer;
+}
+
+#contact-form-button:hover {
+    background-color: var(--hoverShadow);
+}
+
+/*OTHER INFO*/
+
+#other-info {
+    width: 60%;
+    height: 30%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+#other-info div {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    height: 20%;
+
+    margin: 2%;
+}
+
+#other-info div img {
+    height: 100%;
+}
+
+#other-info div h3 {
+    height: 30%;
+
+    margin: 0;
+    margin-left: 3%;
+}
+
+#other-info a {
+    text-decoration: none;
+
+    color: black;
+}

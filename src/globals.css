@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:wght@600&family=Roboto:wght@100;200&display=swap');
+
+:root {
+    --backgroundColor1: #DCD8D1;
+    --backgroundColor2: #221530;
+    --topbarColor: #5D535E;
+    --titleFont: 'Monoton';
+    --genericFont: 'Roboto';
+    --topbarFont: 'Montserrat';
+    --hoverShadow: #EC96A4;
+}
+
+.title {
+    font-family: var(--titleFont);
+    font-weight: 400;
+    font-size: 6vw;
+
+    text-shadow: rgba(0, 0, 0, 0.25) .2vw .1vw .4vw;
+    text-align: center;
+
+    margin: 0;
+}
