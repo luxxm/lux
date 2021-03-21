@@ -20,6 +20,11 @@ app.use(express.urlencoded({
   }))
 
 app.post('/api/send_message', (req, res) => {
+    var que = Object.keys(req.body).length == 0 ? req.query : req.body;
+    
+    console.log(req.body);
+    console.log(req.query);
+    
     fetch(WEBHOOK_URL, {
         method: "post",
         headers: {
@@ -27,8 +32,8 @@ app.post('/api/send_message', (req, res) => {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            username: `${req.body.name} - ${req.body.email}`,
-            content: `${req.body.message}`,
+            username: `${que.name} - ${que.email}`,
+            content: `${que.message}`,
         })
     });
 
