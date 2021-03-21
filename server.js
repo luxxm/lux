@@ -39,4 +39,6 @@ app.post('/api/send_message', (req, res) => {
 app.use(express.static(path.join(__dirname, 'build')))
 
 //listen
-app.listen(3000);
+var server = app.listen(0, () => {
+    console.log(`Server running on ${server.address().port}`);
+});
