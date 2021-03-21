@@ -21,11 +21,11 @@ class Contact extends React.Component {
             <div id="contact" ref={this.contact}>
                 <h1 className="title">CONTACT</h1>
 
-                <form action="POST" id="contact-form">
+                <form action="/api/send_message" method="post" id="contact-form">
                     <input type="text" name="name" placeholder="Name" onChange={(prop) => this.invalid(prop.target, 120)} id="contact-form-name"/>
                     <input type="email" name="email" placeholder="E-Mail" onChange={(prop) => this.invalid(prop.target, 120)} id="contact-form-email"/>
                     <textarea name="message" placeholder="Message" onChange={(prop) => this.invalid(prop.target, 3600)} id="contact-form-message"/>
-                    <input type="button" value="Submit" id="contact-form-button"/>
+                    <input type="submit" value="Submit" id="contact-form-button"/>
                 </form>
 
                 <h2 className="title title-smaller">OTHER USEFUL INFO</h2>

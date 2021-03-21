@@ -15,6 +15,10 @@ app.get('/', (req, res) => {
 
 //      HANDLE API
 
+app.use(express.urlencoded({
+    extended: true
+  }))
+
 app.post('/api/send_message', (req, res) => {
     fetch(WEBHOOK_URL, {
         method: "post",
@@ -23,12 +27,12 @@ app.post('/api/send_message', (req, res) => {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            username: `${req.query.name} - ${req.query.email}`,
-            content: `${req.query.message}`,
+            username: `${req.body.name} - ${req.body.email}`,
+            content: `${req.body.message}`,
         })
     });
 
-    res.end();
+    res.redirect('/');
 })
 
 //serve static content
