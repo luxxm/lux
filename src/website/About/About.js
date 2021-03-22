@@ -5,8 +5,8 @@ function ProjItem(props) {
     return(
         <div className="proj-list-item" onClick={() => {window.open(props.href, '_blank')}}>
             <img src={props.src} alt={props.alt}/>
-            <h2 class="proj-list-item-title proj-item-title-text"><b>{props.alt}</b></h2>
-            <h2 class="proj-list-item-desc proj-item-title-text">{props.children}</h2>
+            <h2 class="proj-item-title-text"><b>{props.alt}</b></h2>
+            <h2 class="proj-item-title-text">{props.children}</h2>
         </div>
     );
 }
